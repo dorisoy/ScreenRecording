@@ -1,0 +1,50 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;net50</TargetFrameworks>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>3.0.0</Version>
+    <Authors>baSSiLL</Authors>
+    <Company />
+    <Product>SharpAvi</Product>
+    <Description>A Motion JPEG video encoder for SharpAvi based on the SixLabors.ImageSharp library.</Description>
+    <Copyright>Copyright © Vasili Maslov 2022</Copyright>
+    <PackageProjectUrl>https://github.com/baSSiLL/SharpAvi</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/baSSiLL/SharpAvi.git</RepositoryUrl>
+    <PackageTags>SharpAvi ImageSharp AVI MJPG M-JPEG video</PackageTags>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RootNamespace>SharpAvi</RootNamespace>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <AssemblyVersion>$(Version).0</AssemblyVersion>
+    <FileVersion>$(Version).0</FileVersion>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageReleaseNotes>https://github.com/baSSiLL/SharpAvi/releases/tag/v$(Version)</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Utilities\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <None Remove="Utilities\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="readme.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="readme.md">
+      <PackagePath>\</PackagePath>
+      <Pack>True</Pack>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ScreenRecording.Core\ScreenRecording.Core.csproj" />
+  </ItemGroup>
+
+</Project>

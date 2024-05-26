@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net8-windows</TargetFrameworks>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SharpAvi.Sample</RootNamespace>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <ImportWindowsDesktopTargets>true</ImportWindowsDesktopTargets>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lameenc32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lameenc64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="NAudio" Version="1.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dorisoy.ComeCapture\Dorisoy.ComeCapture.csproj" />
+    <ProjectReference Include="..\Dorisoy.ScreenRecording.Core\Dorisoy.ScreenRecording.Core.csproj" />
+    <ProjectReference Include="..\Dorisoy.ScreenRecording.ImageSharp\Dorisoy.ScreenRecording.ImageSharp.csproj" />
+  </ItemGroup>
+</Project>

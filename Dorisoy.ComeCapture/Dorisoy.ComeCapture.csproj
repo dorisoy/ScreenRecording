@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFrameworks>net48;net8-windows</TargetFrameworks>
+    <UseWPF>true</UseWPF>
+    <Version>1.2.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="8.0.5" />
+    <PackageReference Include="WpfAnalyzers" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\cut.ico" />
+    <None Remove="Resources\showyou.png" />
+    <None Remove="Resources\保存.png" />
+    <None Remove="Resources\后退.png" />
+    <None Remove="Resources\笔刷.png" />
+    <None Remove="Resources\箭头.png" />
+    <None Remove="Resources\设置.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\cut.ico" />
+    <Resource Include="Resources\showyou.png" />
+    <Resource Include="Resources\保存.png" />
+    <Resource Include="Resources\后退.png" />
+    <Resource Include="Resources\笔刷.png" />
+    <Resource Include="Resources\箭头.png" />
+    <Resource Include="Resources\设置.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="WpfAnalyzers" Version="4.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+ 
+</Project>

@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace ComeCapture.Controls
+namespace Dorisoy.ComeCapture.Controls
 {
     public class KeyboardTextBox : Control
     {

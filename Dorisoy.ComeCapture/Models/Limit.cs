@@ -1,6 +1,6 @@
-﻿using ComeCapture.Controls;
+﻿using Dorisoy.ComeCapture.Controls;
 
-namespace ComeCapture.Models
+namespace Dorisoy.ComeCapture.Models
 {
     /// <summary>
     /// 图片移动的极限值

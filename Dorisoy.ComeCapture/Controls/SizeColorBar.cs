@@ -1,11 +1,11 @@
-﻿using ComeCapture.Models;
+﻿using Dorisoy.ComeCapture.Models;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace ComeCapture.Controls
+namespace Dorisoy.ComeCapture.Controls
 {
     [TemplatePart(Name = "PART_RectangleTool", Type = typeof(RectangleTool))]
     [TemplatePart(Name = "PART_EllipseTool", Type = typeof(EllipseTool))]

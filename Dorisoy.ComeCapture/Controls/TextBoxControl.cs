@@ -2,7 +2,7 @@
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace ComeCapture.Controls
+namespace Dorisoy.ComeCapture.Controls
 {
     [TemplatePart(Name = "PART_TextBox", Type = typeof(TextBox))]
     public class TextBoxControl : Control

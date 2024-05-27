@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Threading;
 
-namespace ComeCapture.Helpers
+namespace Dorisoy.ComeCapture.Helpers
 {
     public static class WpfHelper
     {

@@ -1,8 +1,8 @@
-﻿using ComeCapture.Helpers;
-using ComeCapture.Models;
+﻿using Dorisoy.ComeCapture.Helpers;
+using Dorisoy.ComeCapture.Models;
 using System.Text;
 
-namespace ComeCapture
+namespace Dorisoy.ComeCapture
 {
     public class AppModel : EntityBase
     {

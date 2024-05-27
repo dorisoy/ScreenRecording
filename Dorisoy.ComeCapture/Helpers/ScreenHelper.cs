@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Runtime.InteropServices;
 
-namespace ComeCapture.Helpers
+namespace Dorisoy.ComeCapture.Helpers
 {
     public static class ScreenHelper
     {

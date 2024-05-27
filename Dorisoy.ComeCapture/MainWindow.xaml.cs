@@ -1,6 +1,6 @@
-﻿using ComeCapture.Controls;
-using ComeCapture.Helpers;
-using ComeCapture.Models;
+﻿using Dorisoy.ComeCapture.Controls;
+using Dorisoy.ComeCapture.Helpers;
+using Dorisoy.ComeCapture.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -10,7 +10,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 
-namespace ComeCapture
+namespace Dorisoy.ComeCapture
 {
     /// <summary>
     /// MainWindow.xaml 的交互逻辑

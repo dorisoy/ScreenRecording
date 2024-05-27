@@ -2,6 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Dorisoy.ScreenRecording"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         Title="Dorisoy.ScreenRecording"
         Height="350"
         Width="525"
@@ -31,10 +32,10 @@
             BorderThickness="2"
             CornerRadius="26"
             Padding="7,6">
-        
+
         <StackPanel Orientation="Horizontal">
-            
-            
+
+
             <Button Visibility="{Binding IsRecording, Converter={StaticResource VcBool2VisInv}}"
                     Click="StartRecording_Click"
                     ToolTip="开始录制"
@@ -128,27 +129,14 @@
                     Click="ComeCapture_Click"
                     Style="{StaticResource RoundButton}"
                     ToolTip="截屏">
-                <Path Style="{StaticResource RoundButtonGlyph}">
-                    <Path.Data>
-                        <GeometryGroup>
-                            <GeometryGroup.Transform>
-                                <TransformGroup>
-                                    <TranslateTransform X="-13.5"
-                                                        Y="-14" />
-                                    <ScaleTransform ScaleX="0.020833"
-                                                    ScaleY="0.020833" />
-                                </TransformGroup>
-                            </GeometryGroup.Transform>
-                            <StreamGeometry>
-                                M540.373333 354.56L625.066667 128c45.397333 16.085333 68.821333 64.981333 52.309333 109.226667l-88.021333 235.477333a8.533333 8.533333 0 0 1-16 0l-32.981334-88.277333a42.666667 42.666667 0 0 1 0-29.866667z m-74.922666 200.448L346.624 237.226667C330.112 192.981333 353.536 144.085333 398.933333 128l192.170667 514.090667c15.488-15.274667 34.56-27.52 56.661333-35.370667 79.488-28.16 167.381333 11.733333 196.266667 89.130667 28.970667 77.397333-12.032 162.986667-91.52 191.146666-79.488 28.16-167.381333-11.776-196.266667-89.173333L512 679.594667 467.797333 797.866667c-28.928 77.354667-116.821333 117.248-196.309333 89.088-79.488-28.16-120.490667-113.706667-91.562667-191.104 28.928-77.397333 116.821333-117.290667 196.309334-89.130667 22.101333 7.850667 41.173333 20.053333 56.661333 35.370667l32.554667-87.082667z m-164.053334 251.904c34.090667 12.074667 71.765333-5.034667 84.138667-38.186667 12.373333-33.194667-5.162667-69.845333-39.253333-81.92-34.048-12.074667-71.68 5.034667-84.096 38.186667-12.373333 33.152 5.162667 69.845333 39.253333 81.92z m421.205334 0c34.048-12.074667 51.626667-48.768 39.253333-81.92-12.416-33.152-50.090667-50.261333-84.181333-38.186667-34.048 12.074667-51.626667 48.725333-39.253334 81.92 12.416 33.152 50.090667 50.261333 84.181334 38.186667z
-                            </StreamGeometry>
-                        </GeometryGroup>
-                    </Path.Data>
-                </Path>
+                <materialDesign:PackIcon Kind="ContentCut"
+                                         FontWeight="Bold"
+                                         VerticalAlignment="Center"
+                                         HorizontalAlignment="Center"
+                                         ToolTip="截屏" />
             </Button>
 
 
-            
             <Button Margin="7,0,0,0"
                     IsCancel="True"
                     Click="Exit_Click"
@@ -172,7 +160,7 @@
                     </Path.Data>
                 </Path>
             </Button>
-            
         </StackPanel>
     </Border>
+    
 </Window>

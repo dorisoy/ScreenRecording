@@ -2,7 +2,7 @@
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace ComeCapture.Converters
+namespace Dorisoy.ComeCapture.Converters
 {
     public class ColorConverter: IValueConverter
     {

@@ -8,7 +8,7 @@
 using System;
 using System.Windows.Input;
 
-namespace ComeCapture.Helpers
+namespace Dorisoy.ComeCapture.Helpers
 {
     /// <summary>
     /// 界面命令类

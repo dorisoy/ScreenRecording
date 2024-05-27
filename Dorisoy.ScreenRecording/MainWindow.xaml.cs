@@ -227,7 +227,7 @@ namespace Dorisoy.ScreenRecording
 
         private void ComeCapture_Click(object sender, RoutedEventArgs e)
         {
-            ComeCapture.MainWindow window = new ComeCapture.MainWindow();
+            Dorisoy.ComeCapture.MainWindow window = new Dorisoy.ComeCapture.MainWindow();
             window.Show();
         }
     }

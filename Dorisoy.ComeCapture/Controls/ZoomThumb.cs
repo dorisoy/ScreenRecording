@@ -1,8 +1,8 @@
-﻿using ComeCapture.Models;
+﻿using Dorisoy.ComeCapture.Models;
 using System.Windows;
 using System.Windows.Controls.Primitives;
 
-namespace ComeCapture.Controls
+namespace Dorisoy.ComeCapture.Controls
 {
     public class ZoomThumb : Thumb
     {

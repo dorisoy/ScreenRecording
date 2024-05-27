@@ -1,5 +1,5 @@
-﻿using ComeCapture.Helpers;
-using ComeCapture.Models;
+﻿using Dorisoy.ComeCapture.Helpers;
+using Dorisoy.ComeCapture.Models;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
@@ -9,7 +9,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Shapes;
 
-namespace ComeCapture.Controls
+namespace Dorisoy.ComeCapture.Controls
 {
     public class MainImage : Control
     {

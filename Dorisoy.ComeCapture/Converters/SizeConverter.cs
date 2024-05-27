@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Data;
 
-namespace ComeCapture.Converters
+namespace Dorisoy.ComeCapture.Converters
 {
     public class SizeConverter : IValueConverter
     {

@@ -2,7 +2,7 @@
 using System.Windows;
 using System.Windows.Data;
 
-namespace ComeCapture.Converters
+namespace Dorisoy.ComeCapture.Converters
 {
     public class ToolConverter : IValueConverter
     {

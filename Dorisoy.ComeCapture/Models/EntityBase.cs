@@ -8,7 +8,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace ComeCapture.Models
+namespace Dorisoy.ComeCapture.Models
 {
     /// <summary>
     /// singba:20120807

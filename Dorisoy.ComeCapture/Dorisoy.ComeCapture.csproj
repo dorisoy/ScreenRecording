@@ -13,7 +13,6 @@
 
   <ItemGroup>
     <None Remove="Resources\cut.ico" />
-    <None Remove="Resources\showyou.png" />
     <None Remove="Resources\保存.png" />
     <None Remove="Resources\后退.png" />
     <None Remove="Resources\笔刷.png" />
@@ -23,7 +22,6 @@
 
   <ItemGroup>
     <Resource Include="Resources\cut.ico" />
-    <Resource Include="Resources\showyou.png" />
     <Resource Include="Resources\保存.png" />
     <Resource Include="Resources\后退.png" />
     <Resource Include="Resources\笔刷.png" />

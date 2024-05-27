@@ -1,9 +1,9 @@
-﻿using ComeCapture.Models;
+﻿using Dorisoy.ComeCapture.Models;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
-namespace ComeCapture.Controls
+namespace Dorisoy.ComeCapture.Controls
 {
     public class ToolButton : RadioButton
     {

@@ -1,7 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:control="clr-namespace:ComeCapture.Controls"
-                    xmlns:converter="clr-namespace:ComeCapture.Converters"
+                    xmlns:control="clr-namespace:Dorisoy.ComeCapture.Controls"
+                    xmlns:converter="clr-namespace:Dorisoy.ComeCapture.Converters"
                     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <SolidColorBrush x:Key="BaseColor" Color="#2ecc71"/>
@@ -172,32 +172,50 @@
                         <control:ToolButton Tool="Ellipse"  ToolTip="椭圆工具" Style="{StaticResource ToolButton}">
                             <Ellipse Width="17" Height="14" Stroke="{StaticResource ToolColor}" StrokeThickness="2" Fill="White"/>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="Arrow" ToolTip="箭头工具" Style="{StaticResource ToolButton}">
-                            <Image Width="18" Height="15" Source="/ComeCapture;component/Resources/箭头.png"/>
+                            <Image Width="18"
+                                   Height="15"
+                                   Source="pack://application:,,,/Dorisoy.ComeCapture;component/Resources/箭头.png"/>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="Line" ToolTip="画刷工具" Style="{StaticResource ToolButton}">
-                            <Image Width="18" Height="15" Source="/ComeCapture;component/Resources/笔刷.png"/>
+                            <Image Width="18"
+                                   Height="15"
+                                   Source="pack://application:,,,/Dorisoy.ComeCapture;component/Resources/笔刷.png"/>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="Text" ToolTip="文字工具" Style="{StaticResource ToolButton}">
                             <TextBlock Text="A" FontSize="19" TextAlignment="Center" Margin="0,-4,0,0" FontWeight="Bold" Foreground="{StaticResource ToolColor}"/>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="Revoke" ToolTip="撤销编辑" Style="{StaticResource ToolButton}">
-                            <Image Margin="0,-1,0,1" Width="18" Height="15" Source="/ComeCapture;component/Resources/后退.png"/>
+                            <Image Margin="0,-1,0,1"
+                                   Width="18"
+                                   Height="15"
+                                   Source="pack://application:,,,/Dorisoy.ComeCapture;component/Resources/后退.png"/>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="Save" ToolTip="保存" Style="{StaticResource ToolButton}">
-                            <Image Margin="0,1,0,-1" Width="18" Height="15" Source="/ComeCapture;component/Resources/保存.png"/>
+                            <Image Margin="0,1,0,-1"
+                                   Width="18"
+                                   Height="15"
+                                   Source="pack://application:,,,/Dorisoy.ComeCapture;component/Resources/保存.png"/>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="Cancel" ToolTip="退出截图" Style="{StaticResource ToolButton}">
                             <Grid Width="17" Height="14">
                                 <Path Stroke="Red" StrokeThickness="4" Data="M 4,2 L 15,13"/>
                                 <Path Stroke="Red" StrokeThickness="4" Data="M 4,13 L 15,2"/>
                             </Grid>
                         </control:ToolButton>
+                        
                         <control:ToolButton Tool="OK" ToolTip="完成截图" Style="{StaticResource ToolButton}">
                             <Grid Width="17" Height="14">
                                 <Path Stroke="Green" StrokeThickness="4" Data="M 2,7 L 7,12 L 16,2"/>
                             </Grid>
                         </control:ToolButton>
+                        
                     </StackPanel>
                 </ControlTemplate>
             </Setter.Value>
